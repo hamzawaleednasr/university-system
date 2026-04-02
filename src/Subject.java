@@ -1,14 +1,16 @@
 public class Subject {
     private String code;
     private String name;
-    private Prof prof;
+    private int profID;
+    private int studentID;
     
     public Subject() {}
 
-    public Subject(String code, String name, Prof prof) {
+    public Subject(String code, String name, int profID, int studentID) {
         this.code = code;
         this.name = name;
-        this.prof = prof;
+        this.profID = profID;
+        this.studentID = studentID;
     }
 
     public String getCode() {
@@ -23,10 +25,26 @@ public class Subject {
     public void setName(String name) {
         this.name = name;
     }
-    public Prof getProf() {
-        return prof;
+    public int getProf() {
+        return profID;
     }
-    public void setProf(Prof prof) {
-        this.prof = prof;
+    public void setProf(int profID) {
+        this.profID = profID;
+    }
+
+    public int getProfID() {
+        return profID;
+    }
+
+    public void setProfID(int profID) {
+        this.profID = profID;
+    }
+
+    public int getStudentID() {
+        return studentID;
+    }
+
+    public void setStudentID(int studentID) {
+        this.studentID = studentID;
     }
 }

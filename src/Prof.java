@@ -1,8 +1,5 @@
-import java.util.ArrayList;
-
 public class Prof extends Person {
     private int id;
-    private ArrayList<Subject> subjects;
 
     public Prof() {}
     
@@ -18,12 +15,4 @@ public class Prof extends Person {
     public void setId(int id) {
         this.id = id;
     }
-
-    public ArrayList<Subject> getSubjects() {
-        return subjects;
-    }
-
-    public void addSubject(Subject subject) {
-        subjects.add(subject);
-    }    
 }

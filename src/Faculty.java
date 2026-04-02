@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Faculty {
+    private int id;
     private String name;
     private ArrayList<Student> students;
 
@@ -21,5 +22,17 @@ public class Faculty {
     }
     public void addStudent(Student student) {
         students.add(student);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setStudents(ArrayList<Student> students) {
+        this.students = students;
     }
 }

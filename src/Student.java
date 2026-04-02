@@ -1,10 +1,5 @@
-import java.util.ArrayList;
-
-import javax.security.auth.Subject;
-
 public class Student extends Person {   
     private int id; 
-    private ArrayList<Subject> subjects;
 
     public Student() {}
     
@@ -18,11 +13,5 @@ public class Student extends Person {
     }
     public void setId(int id) {
         this.id = id;
-    }
-    public ArrayList<Subject> getSubjects() {
-        return subjects;
-    }
-    public void addSubject(Subject subject) {
-        subjects.add(subject);
     }
 }
