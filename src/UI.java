@@ -1,9 +1,17 @@
 import java.util.Scanner;
+import java.io.IOException;
 
 public class UI {
+    public static void clear() {
+        try {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void printMainMenu() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        clear();
         System.out.println("=============================================");
         System.out.println("====    Welcome to University System!    ====");
         System.out.println("=============================================");
@@ -42,26 +50,26 @@ public class UI {
     }
 
     // public static void performUserInput() {
-    //     int choice = readInt("Enter a number [1-5]: ");
+    // int choice = readInt("Enter a number [1-5]: ");
 
-    //     switch (choice) {
-    //         case 1:
-    //             printUniversityMenu();
-    //             break;
-    //         case 2:
-    //             printFacultyMenu();
-    //             break;
-    //         case 3:
-    //             printProfMenu();
-    //             break;
-    //         case 4:
-    //             printStudentMenu();
-    //             break;
-    //         case 5:
-    //             printSubjectMenu();
-    //             break;
-    //         default:
-    //             break;
-    //     }
+    // switch (choice) {
+    // case 1:
+    // printUniversityMenu();
+    // break;
+    // case 2:
+    // printFacultyMenu();
+    // break;
+    // case 3:
+    // printProfMenu();
+    // break;
+    // case 4:
+    // printStudentMenu();
+    // break;
+    // case 5:
+    // printSubjectMenu();
+    // break;
+    // default:
+    // break;
+    // }
     // }
 }
