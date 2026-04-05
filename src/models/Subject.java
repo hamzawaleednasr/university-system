@@ -1,3 +1,5 @@
+package models;
+
 public class Subject {
     private String code;
     private String name;

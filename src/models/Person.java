@@ -1,3 +1,5 @@
+package models;
+
 public class Person {
     private String name;
     private short age;

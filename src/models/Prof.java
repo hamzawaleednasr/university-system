@@ -1,3 +1,5 @@
+package models;
+
 public class Prof extends Person {
     private int id;
 

@@ -1,4 +1,7 @@
+package models;
+
 import java.util.ArrayList;
+import ui.Menus;
 
 public class University {
     private String name;
@@ -24,7 +27,7 @@ public class University {
     }
 
     public static void main(String[] args) {
-        UI.printMainMenu();
-        UI.printMainMenu();
+        Menus.printMainMenu();
+        Menus.printMainMenu();
     }
 }

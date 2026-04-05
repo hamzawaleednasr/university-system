@@ -1,17 +1,10 @@
-import java.util.Scanner;
-import java.io.IOException;
+package ui;
 
-public class UI {
-    public static void clear() {
-        try {
-            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+import util.Terminal;
 
+public class Menus {
     public static void printMainMenu() {
-        clear();
+        Terminal.clear();
         System.out.println("=============================================");
         System.out.println("====    Welcome to University System!    ====");
         System.out.println("=============================================");
@@ -25,7 +18,7 @@ public class UI {
     }
 
     public static void printFacultyMenu() {
-        clear();
+        Terminal.clear();
         System.out.println("==============================================");
         System.out.println("====             Faculty Menu             ====");
         System.out.println("==============================================");
@@ -40,7 +33,7 @@ public class UI {
     }
 
     public static void printProfMenu() {
-        clear();
+        Terminal.clear();
         System.out.println("==============================================");
         System.out.println("======             Prof Menu            ======");
         System.out.println("==============================================");
@@ -55,7 +48,7 @@ public class UI {
     }
 
     public static void printStudentMenu() {
-        clear();
+        Terminal.clear();
         System.out.println("==============================================");
         System.out.println("====             Student Menu             ====");
         System.out.println("==============================================");
@@ -70,7 +63,7 @@ public class UI {
     }
 
     public static void printSubjectMenu() {
-        clear();
+        Terminal.clear();
         System.out.println("==============================================");
         System.out.println("====             Subject Menu             ====");
         System.out.println("==============================================");
@@ -82,42 +75,6 @@ public class UI {
         System.out.println("==============================================");
         System.out.println("\t[0] Return to main menu");
         System.out.println("==============================================");
-    }
-
-    public static String readString(String message) {
-        Scanner input = new Scanner(System.in);
-        String userInput;
-
-        System.out.print(message);
-        userInput = input.next();
-
-        input.close();
-
-        return userInput;
-    }
-
-    public static int readInt(String message) {
-        Scanner input = new Scanner(System.in);
-        int userInput;
-
-        System.out.print(message);
-        userInput = input.nextInt();
-
-        input.close();
-
-        return userInput;
-    }
-
-    public static int readUserInput(String message) {
-        int choice = readInt("Enter a number [1-5]: ");
-
-        // here exit user, but make it later . . .
-        if (choice == 0) {}
-
-        while (choice > 5 || choice < 1) 
-            choice = readInt("Please enter a number between 1 and 5: ");
-
-        return choice;
     }
 
     public static void performUserInput(int choice) {
