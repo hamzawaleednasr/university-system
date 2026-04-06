@@ -76,23 +76,4 @@ public class Menus {
         System.out.println("\t[0] Return to main menu");
         System.out.println("==============================================");
     }
-
-    public static void performUserInput(int choice) {
-        switch (choice) {
-            case 1:
-                printFacultyMenu();
-                break;
-            case 2:
-                printProfMenu();
-                break;
-            case 3:
-                printStudentMenu();
-                break;
-            case 4:
-                printSubjectMenu();
-                break;
-            default:
-                break;
-        }
-    }
 }
