@@ -5,12 +5,15 @@ import java.util.ArrayList;
 public class Faculty {
     private int id;
     private String name;
-    private ArrayList<Student> students;
+    private ArrayList<Integer> students;
+    private ArrayList<Subject> subjects;
 
     public Faculty() {}
 
     public Faculty(String name) {
         this.name = name;
+        this.students = new ArrayList<Integer>();
+        this.subjects = new ArrayList<Subject>();
     }
 
     public String getName() {
@@ -19,11 +22,17 @@ public class Faculty {
     public void setName(String name) {
         this.name = name;
     }
-    public ArrayList<Student> getStudents() {
+    public ArrayList<Integer> getStudents() {
         return students;
     }
-    public void addStudent(Student student) {
-        students.add(student);
+    public void addStudent(int studentID) {
+        students.add(studentID);
+    }
+    public ArrayList<Subject> getSubjects() {
+        return subjects;
+    }
+    public void addSubject(Subject subject) {
+        subjects.add(subject);
     }
 
     public int getId() {
@@ -32,9 +41,5 @@ public class Faculty {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public void setStudents(ArrayList<Student> students) {
-        this.students = students;
     }
 }
