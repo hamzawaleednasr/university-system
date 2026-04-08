@@ -2,13 +2,14 @@ package ui;
 
 import util.Terminal;
 import controllers.Controller;
+import core.AppConfig;
 
 public class Menus {
     public static void printMainMenu() {
         Terminal.clear();
-        System.out.println("=============================================");
-        System.out.println("====    Welcome to University System!    ====");
-        System.out.println("=============================================");
+        System.out.println("==============================================");
+        System.out.println("====    Welcome to " + AppConfig.university.getName() + " University!   ====");
+        System.out.println("==============================================");
         System.out.println("\t[1] Faculty Menu");
         System.out.println("\t[2] Prof Menu");
         System.out.println("\t[3] Student Menu");
