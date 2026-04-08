@@ -1,17 +1,22 @@
 package controllers;
 
-import ui.Menus;
+import ui.MainMenu;
+import ui.FacultyMenu;
 
 public class Controller {
     public static void performMainInput(int choice) {
         switch (choice) {
             case 1:
+                FacultyMenu.printFacultyMenu();
                 break;
             case 2:
+                MainMenu.printProfMenu();
                 break;
             case 3:
+                MainMenu.printStudentMenu();
                 break;
             case 4:
+                MainMenu.printSubjectMenu();
                 break;
             case 0:
                 return;
@@ -31,7 +36,7 @@ public class Controller {
             case 5:
                 break;
             case 0:
-                Menus.printMainMenu();
+                MainMenu.printMainMenu();
                 break;
         }
     }    
@@ -49,7 +54,7 @@ public class Controller {
             case 5:
                 break;
             case 0:
-                Menus.printMainMenu();
+                MainMenu.printMainMenu();
                 break;
         }
     }    
@@ -67,7 +72,7 @@ public class Controller {
             case 5:
                 break;
             case 0:
-                Menus.printMainMenu();
+                MainMenu.printMainMenu();
                 break;
         }
     }    
@@ -85,7 +90,7 @@ public class Controller {
             case 5:
                 break;
             case 0:
-                Menus.printMainMenu();
+                MainMenu.printMainMenu();
                 break;
         }
     }    

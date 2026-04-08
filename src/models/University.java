@@ -1,7 +1,7 @@
 package models;
 
 import java.util.ArrayList;
-import ui.Menus;
+import ui.MainMenu;
 
 public class University {
     private String name;
@@ -33,10 +33,5 @@ public class University {
     }
     public void addStudent(Student student) {
         students.add(student);
-    }
-
-    public static void main(String[] args) {
-        Menus.printMainMenu();
-        Menus.printMainMenu();
     }
 }

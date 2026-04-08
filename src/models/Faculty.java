@@ -10,7 +10,8 @@ public class Faculty {
 
     public Faculty() {}
 
-    public Faculty(String name) {
+    public Faculty(int id, String name) {
+        this.id = id;
         this.name = name;
         this.students = new ArrayList<Integer>();
         this.subjects = new ArrayList<Subject>();
@@ -37,9 +38,5 @@ public class Faculty {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 }
