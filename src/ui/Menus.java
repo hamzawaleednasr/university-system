@@ -1,6 +1,7 @@
 package ui;
 
 import util.Terminal;
+import controllers.Controller;
 
 public class Menus {
     public static void printMainMenu() {
@@ -15,6 +16,7 @@ public class Menus {
         System.out.println("=============================================");
         System.out.println("\t[0] Exit");
         System.out.println("=============================================");
+        Controller.performMainInput(Terminal.readIntInRange(0, 4));
     }
 
     public static void printFacultyMenu() {
@@ -30,6 +32,7 @@ public class Menus {
         System.out.println("==============================================");
         System.out.println("\t[0] Return to main menu");
         System.out.println("==============================================");
+        Controller.performFacultyInput(Terminal.readIntInRange(0, 5));
     }
 
     public static void printProfMenu() {
@@ -45,6 +48,7 @@ public class Menus {
         System.out.println("==============================================");
         System.out.println("\t[0] Return to main menu");
         System.out.println("==============================================");
+        Controller.performProfInput(Terminal.readIntInRange(0, 5));
     }
 
     public static void printStudentMenu() {
@@ -60,6 +64,7 @@ public class Menus {
         System.out.println("==============================================");
         System.out.println("\t[0] Return to main menu");
         System.out.println("==============================================");
+        Controller.performStudentInput(Terminal.readIntInRange(0, 5));
     }
 
     public static void printSubjectMenu() {
@@ -75,5 +80,6 @@ public class Menus {
         System.out.println("==============================================");
         System.out.println("\t[0] Return to main menu");
         System.out.println("==============================================");
+        Controller.performSubjectInput(Terminal.readIntInRange(0, 5));
     }
 }

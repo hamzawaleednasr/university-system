@@ -6,16 +6,12 @@ public class Controller {
     public static void performMainInput(int choice) {
         switch (choice) {
             case 1:
-                Menus.printFacultyMenu();
                 break;
             case 2:
-                Menus.printProfMenu();
                 break;
             case 3:
-                Menus.printStudentMenu();
                 break;
             case 4:
-                Menus.printSubjectMenu();
                 break;
             case 0:
                 return;
