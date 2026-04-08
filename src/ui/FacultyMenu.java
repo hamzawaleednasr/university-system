@@ -12,11 +12,10 @@ public class FacultyMenu {
         System.out.println("\t[2] Add Faculty");
         System.out.println("\t[3] Update Faculty");
         System.out.println("\t[4] Delete Faculty");
-        System.out.println("\t[5] Register a Student");
         System.out.println("==============================================");
         System.out.println("\t[0] Return to main menu");
         System.out.println("==============================================");
-        Controller.performFacultyInput(Terminal.readIntInRange(0, 5));
+        Controller.performFacultyInput(Terminal.readIntInRange(0, 4));
     }
 
     public static void printFacultyRecord(Faculty faculty) {

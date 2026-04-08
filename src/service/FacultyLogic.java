@@ -2,8 +2,8 @@ package service;
 
 import core.AppConfig;
 import models.Faculty;
-import ui.MainMenu;
 import util.Terminal;
+import ui.MainMenu;
 import ui.FacultyMenu;
 
 public class FacultyLogic {

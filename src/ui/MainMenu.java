@@ -38,20 +38,6 @@ public class MainMenu {
         Controller.performProfInput(Terminal.readIntInRange(0, 5));
     }
 
-    public static void printStudentMenu() {
-        Terminal.clear();
-        printHeader("Student Menu");
-        System.out.println("\t[1] Show Students");
-        System.out.println("\t[2] Add Student");
-        System.out.println("\t[3] Update Student");
-        System.out.println("\t[4] Delete Student");
-        System.out.println("\t[5] Register a Subject");
-        System.out.println("==============================================");
-        System.out.println("\t[0] Return to main menu");
-        System.out.println("==============================================");
-        Controller.performStudentInput(Terminal.readIntInRange(0, 5));
-    }
-
     public static void printSubjectMenu() {
         Terminal.clear();
         printHeader("Subject Menu");
