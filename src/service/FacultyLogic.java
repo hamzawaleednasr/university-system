@@ -21,7 +21,7 @@ public class FacultyLogic {
         int facultyID;
 
         while (true) {
-            facultyID = Terminal.readInt("Enter faculty id: ");
+            facultyID = Terminal.readInt("Enter faculty ID: ");
             
             for (Faculty faculty : AppConfig.university.getFaculties()) {
                 if (faculty.getId() == facultyID) {

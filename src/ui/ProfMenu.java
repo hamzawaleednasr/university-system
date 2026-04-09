@@ -7,7 +7,7 @@ import models.Prof;
 public class ProfMenu {
     public static void printProfMenu() {
         Terminal.clear();
-        MainMenu.printHeader("\tProf Menu");
+        MainMenu.printHeader("\t\tProf Menu");
         System.out.println("\t[1] Show Proffesors");
         System.out.println("\t[2] Add Proffesor");
         System.out.println("\t[3] Update Proffesor");
@@ -33,10 +33,10 @@ public class ProfMenu {
     }
 
     public static void printProfCard(Prof prof) {
-        System.out.println("======P=R=O=F===I=N=F=O=====");
-        System.out.println("| ID: " + prof.getId() + "\t|");
-        System.out.println("| Name: " + prof.getName() + "\t|");
-        System.out.println("| Age: " + prof.getAge() + "\t|");
+        System.out.println("\n======P=R=O=F===I=N=F=O=====");
+        System.out.println("| ID: " + prof.getId());
+        System.out.println("| Name: " + prof.getName());
+        System.out.println("| Age: " + prof.getAge());
         System.out.println("============================");
     }
 }

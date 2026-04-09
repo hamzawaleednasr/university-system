@@ -7,7 +7,7 @@ import models.Student;
 public class StudentMenu {
     public static void printStudentMenu() {
         Terminal.clear();
-        MainMenu.printHeader("\tStudent Menu");
+        MainMenu.printHeader("\t\tStudent Menu");
         System.out.println("\t[1] Show Students");
         System.out.println("\t[2] Add Student");
         System.out.println("\t[3] Update Student");
@@ -33,10 +33,10 @@ public class StudentMenu {
     }
 
     public static void printStudentCard(Student student) {
-        System.out.println("===S=T=U=D=E=N=T==I=N=F=O===");
-        System.out.println("| ID: " + student.getId() + "\t|");
-        System.out.println("| Name: " + student.getName() + "\t|");
-        System.out.println("| Age: " + student.getAge() + "\t|");
+        System.out.println("\n===S=T=U=D=E=N=T==I=N=F=O===");
+        System.out.println("| ID: " + student.getId());
+        System.out.println("| Name: " + student.getName());
+        System.out.println("| Age: " + student.getAge());
         System.out.println("============================");
     }
 }

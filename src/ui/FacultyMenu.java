@@ -7,7 +7,7 @@ import controllers.Controller;
 public class FacultyMenu {
     public static void printFacultyMenu() {
         Terminal.clear();
-        MainMenu.printHeader("\tFaculty Menu");
+        MainMenu.printHeader("\t\tFaculty Menu");
         System.out.println("\t[1] Show Faculties");
         System.out.println("\t[2] Add Faculty");
         System.out.println("\t[3] Update Faculty");
@@ -32,9 +32,9 @@ public class FacultyMenu {
     }
 
     public static void printFacultyCard(Faculty faculty) {
-        System.out.println("===F=A=C=U=L=T=Y==I=N=F=O===");
-        System.out.println("| ID: " + faculty.getId() + "\t|");
-        System.out.println("| Name: " + faculty.getName() + "\t|");
+        System.out.println("\n===F=A=C=U=L=T=Y==I=N=F=O===");
+        System.out.println("| ID: " + faculty.getId());
+        System.out.println("| Name: " + faculty.getName());
         System.out.println("============================");
     }
 }

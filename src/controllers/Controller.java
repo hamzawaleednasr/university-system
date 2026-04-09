@@ -38,34 +38,37 @@ public class Controller {
                 MainMenu.printHeader("\t\tFaculities");
                 FacultyLogic.show();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return faculty menu . . . ");
+                System.out.print("Press Enter to return faculty menu . . . ");
                 Terminal.pause();
                 FacultyMenu.printFacultyMenu();
                 break;
             case 2:
                 Terminal.clear();
-                MainMenu.printHeader("\tAdd Faculty");
+                MainMenu.printHeader("\t\tAdd Faculty");
                 FacultyLogic.add();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return faculty menu . . . ");
+                System.out.println("Faculty added successfully!");
+                System.out.print("Press Enter to return faculty menu . . . ");
                 Terminal.pause();
                 FacultyMenu.printFacultyMenu();
                 break;
             case 3:
                 Terminal.clear();
-                MainMenu.printHeader("\tUpdate Faculty");
+                MainMenu.printHeader("\t\tUpdate Faculty");
                 FacultyLogic.update();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return faculty menu . . . ");
+                System.out.println("Faculty updated successfully!");
+                System.out.print("Press Enter to return faculty menu . . . ");
                 Terminal.pause();
                 FacultyMenu.printFacultyMenu();
                 break;
             case 4:
                 Terminal.clear();
-                MainMenu.printHeader("\tDelete Faculty");
+                MainMenu.printHeader("\t\tDelete Faculty");
                 FacultyLogic.delete();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return faculty menu . . . ");
+                System.out.println("Faculty deleted successfully!");
+                System.out.print("Press Enter to return faculty menu . . . ");
                 Terminal.pause();
                 FacultyMenu.printFacultyMenu();
                 break;
@@ -79,37 +82,40 @@ public class Controller {
         switch (choice) {
             case 1:
                 Terminal.clear();
-                MainMenu.printHeader("Proffessors");
+                MainMenu.printHeader("\t\tProffessors");
                 ProfLogic.show();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return prof menu . . . ");
+                System.out.print("Press Enter to return prof menu . . . ");
                 Terminal.pause();
                 ProfMenu.printProfMenu();
                 break;
             case 2:
                 Terminal.clear();
-                MainMenu.printHeader("Add Proffessor");
+                MainMenu.printHeader("\t\tAdd Proffessor");
                 ProfLogic.add();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return prof menu . . . ");
+                System.out.println("Proffessor added successfully!");
+                System.out.print("Press Enter to return prof menu . . . ");
                 Terminal.pause();
                 ProfMenu.printProfMenu();
                 break;
             case 3:
                 Terminal.clear();
-                MainMenu.printHeader("Update Proffessor");
+                MainMenu.printHeader("\t\tUpdate Proffessor");
                 ProfLogic.update();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return prof menu . . . ");
+                System.out.println("Proffessor updated successfully!");
+                System.out.print("Press Enter to return prof menu . . . ");
                 Terminal.pause();
                 ProfMenu.printProfMenu();
                 break;
             case 4:
                 Terminal.clear();
-                MainMenu.printHeader("Delete Proffessor");
+                MainMenu.printHeader("\t\tDelete Proffessor");
                 ProfLogic.delete();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return prof menu . . . ");
+                System.out.println("Proffessor deleted successfully!");
+                System.out.print("Press Enter to return prof menu . . . ");
                 Terminal.pause();
                 ProfMenu.printProfMenu();
                 break;
@@ -123,37 +129,40 @@ public class Controller {
         switch (choice) {
             case 1:
                 Terminal.clear();
-                MainMenu.printHeader("\tStudents");
+                MainMenu.printHeader("\t\tStudents");
                 StudentLogic.show();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return student menu . . . ");
+                System.out.print("Press Enter to return student menu . . . ");
                 Terminal.pause();
                 StudentMenu.printStudentMenu();
                 break;
             case 2:
                 Terminal.clear();
-                MainMenu.printHeader("\tAdd Student");
+                MainMenu.printHeader("\t\tAdd Student");
                 StudentLogic.add();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return student menu . . . ");
+                System.out.println("Student added successfully!");
+                System.out.print("Press Enter to return student menu . . . ");
                 Terminal.pause();
                 StudentMenu.printStudentMenu();
                 break;
             case 3:
                 Terminal.clear();
-                MainMenu.printHeader("\tUpdate Student");
+                MainMenu.printHeader("\t\tUpdate Student");
                 StudentLogic.update();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return student menu . . . ");
+                System.out.println("Student updated successfully!");
+                System.out.print("Press Enter to return student menu . . . ");
                 Terminal.pause();
                 StudentMenu.printStudentMenu();
                 break;
             case 4:
                 Terminal.clear();
-                MainMenu.printHeader("\tDelete Student");
+                MainMenu.printHeader("\t\tDelete Student");
                 StudentLogic.delete();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return student menu . . . ");
+                System.out.println("Student deleted successfully!");
+                System.out.print("Press Enter to return student menu . . . ");
                 Terminal.pause();
                 StudentMenu.printStudentMenu();
                 break;
@@ -170,7 +179,7 @@ public class Controller {
                 MainMenu.printHeader("\tSubjects");
                 SubjectLogic.show();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return subject menu . . . ");
+                System.out.print("Press Enter to return subject menu . . . ");
                 Terminal.pause();
                 SubjectMenu.printSubjectMenu();
                 break;
@@ -179,7 +188,8 @@ public class Controller {
                 MainMenu.printHeader("\tAdd Subject");
                 SubjectLogic.add();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return subject menu . . . ");
+                System.out.println("Subject added successfully!");
+                System.out.print("Press Enter to return subject menu . . . ");
                 Terminal.pause();
                 SubjectMenu.printSubjectMenu();
                 break;
@@ -188,7 +198,8 @@ public class Controller {
                 MainMenu.printHeader("\tUpdate Subjects");
                 SubjectLogic.update();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return subject menu . . . ");
+                System.out.println("Subject updated successfully!");
+                System.out.print("Press Enter to return subject menu . . . ");
                 Terminal.pause();
                 SubjectMenu.printSubjectMenu();
                 break;
@@ -197,7 +208,8 @@ public class Controller {
                 MainMenu.printHeader("\tDelete Subjects");
                 SubjectLogic.delete();
                 System.out.println("==============================================");
-                System.out.println("Press Enter to return subject menu . . . ");
+                System.out.println("Subject updated successfully!");
+                System.out.print("Press Enter to return subject menu . . . ");
                 Terminal.pause();
                 SubjectMenu.printSubjectMenu();
                 break;

@@ -7,7 +7,7 @@ import models.Subject;
 public class SubjectMenu {
     public static void printSubjectMenu() {
         Terminal.clear();
-        MainMenu.printHeader("\tSubject Menu");
+        MainMenu.printHeader("\t\tSubject Menu");
         System.out.println("\t[1] Show Subjects");
         System.out.println("\t[2] Add Subject");
         System.out.println("\t[3] Update Subject");
@@ -32,9 +32,9 @@ public class SubjectMenu {
     }
 
     public static void printSubjectCard(Subject subject) {
-        System.out.println("===S=U=B=J=E=C=T==I=N=F=O===");
-        System.out.println("| Code: " + subject.getCode() + "|");
-        System.out.println("| Name: " + subject.getName() + "|");
+        System.out.println("\n===S=U=B=J=E=C=T==I=N=F=O===");
+        System.out.println("| Code: " + subject.getCode());
+        System.out.println("| Name: " + subject.getName());
         System.out.println("============================");
     }
 }
