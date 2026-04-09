@@ -7,7 +7,7 @@ import controllers.Controller;
 public class FacultyMenu {
     public static void printFacultyMenu() {
         Terminal.clear();
-        MainMenu.printHeader("Faculty Menu");
+        MainMenu.printHeader("\tFaculty Menu");
         System.out.println("\t[1] Show Faculties");
         System.out.println("\t[2] Add Faculty");
         System.out.println("\t[3] Update Faculty");

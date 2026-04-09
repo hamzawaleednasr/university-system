@@ -12,14 +12,17 @@ public class Terminal {
         }
     }
 
+    public static void pause() {
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+    }
+
     public static String readString(String message) {
         Scanner input = new Scanner(System.in);
         String userInput;
 
         System.out.print(message);
         userInput = input.next();
-
-        input.close();
 
         return userInput;
     }
@@ -30,8 +33,6 @@ public class Terminal {
 
         System.out.print(message);
         userInput = input.nextInt();
-
-        input.close();
 
         return userInput;
     }

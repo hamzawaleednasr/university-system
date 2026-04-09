@@ -7,7 +7,7 @@ import models.Subject;
 public class SubjectMenu {
     public static void printSubjectMenu() {
         Terminal.clear();
-        MainMenu.printHeader("Subject Menu");
+        MainMenu.printHeader("\tSubject Menu");
         System.out.println("\t[1] Show Subjects");
         System.out.println("\t[2] Add Subject");
         System.out.println("\t[3] Update Subject");

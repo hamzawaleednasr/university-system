@@ -3,27 +3,18 @@ package service;
 import core.AppConfig;
 import models.Faculty;
 import util.Terminal;
-import ui.MainMenu;
 import ui.FacultyMenu;
 
 public class FacultyLogic {
     public static void show() {
-        MainMenu.printHeader("Faculities");
-
         for (Faculty faculty : AppConfig.university.getFaculties()) {
             FacultyMenu.printFacultyRecord(faculty);
-        }
-
-        System.out.println("=============================================================");
+        }        
     }
 
     public static void add() {
-        MainMenu.printHeader("Add Faculty");
-
         Faculty newFaculty = FacultyMenu.readFacultyInfo();
         AppConfig.university.addFaculty(newFaculty);
-
-        System.out.println("=============================================================");
     }
 
     public static Faculty find() {
@@ -42,8 +33,6 @@ public class FacultyLogic {
     }
 
     public static void update() {
-        MainMenu.printHeader("Update Faculty");
-
         Faculty faculty = find();
 
         if (faculty != null) {
@@ -51,13 +40,9 @@ public class FacultyLogic {
             System.out.println();
             faculty = FacultyMenu.readFacultyInfo();
         }
-
-        System.out.println("=============================================================");
     }
 
     public static void delete() {
-        MainMenu.printHeader("Delete Faculty");
-
         Faculty faculty = find();
 
         if (faculty != null) {
@@ -71,7 +56,5 @@ public class FacultyLogic {
                 System.out.println("Operation canceled!");
             }
         }
-
-        System.out.println("=============================================================");
     }
 }

@@ -7,7 +7,7 @@ import models.Student;
 public class StudentMenu {
     public static void printStudentMenu() {
         Terminal.clear();
-        MainMenu.printHeader("Student Menu");
+        MainMenu.printHeader("\tStudent Menu");
         System.out.println("\t[1] Show Students");
         System.out.println("\t[2] Add Student");
         System.out.println("\t[3] Update Student");

@@ -7,7 +7,7 @@ import models.Prof;
 public class ProfMenu {
     public static void printProfMenu() {
         Terminal.clear();
-        MainMenu.printHeader("Prof Menu");
+        MainMenu.printHeader("\tProf Menu");
         System.out.println("\t[1] Show Proffesors");
         System.out.println("\t[2] Add Proffesor");
         System.out.println("\t[3] Update Proffesor");

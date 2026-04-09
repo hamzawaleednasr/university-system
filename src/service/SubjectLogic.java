@@ -9,26 +9,18 @@ import util.Terminal;
 
 public class SubjectLogic {
     public static void show() {
-        MainMenu.printHeader("Subjects");
-
         for (Faculty faculty : AppConfig.university.getFaculties()) {
             for (Subject subject : faculty.getSubjects()) {
                 SubjectMenu.printSubjectRecord(subject);
             }
         }
-
-        System.out.println("=============================================================");
     }
 
     public static void add() {
-        MainMenu.printHeader("Add Subject");
-
         Faculty faculty = FacultyLogic.find();
 
         Subject newSubject = SubjectMenu.readSubjectInfo();
         faculty.getSubjects().add(newSubject);
-
-        System.out.println("=============================================================");
     }
 
     public static Subject find() {
@@ -49,8 +41,6 @@ public class SubjectLogic {
     }
 
     public static void update() {
-        MainMenu.printHeader("Update Subject");
-
         Subject subject = find();
 
         if (subject != null) {
@@ -58,13 +48,9 @@ public class SubjectLogic {
             System.out.println();
             subject = SubjectMenu.readSubjectInfo();
         }
-
-        System.out.println("=============================================================");
     }
 
     public static void delete() {
-        MainMenu.printHeader("Delete Subject");
-
         Subject subject = find();
 
         if (subject != null) {
@@ -84,7 +70,5 @@ public class SubjectLogic {
                 System.out.println("Operation canceled!");
             }
         }
-
-        System.out.println("=============================================================");
     }
 }

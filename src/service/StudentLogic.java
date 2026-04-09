@@ -8,22 +8,14 @@ import models.Student;
 
 public class StudentLogic {
     public static void show() {
-        MainMenu.printHeader("Students");
-
         for (Student student : AppConfig.university.getStudents()) {
             StudentMenu.printStudentRecord(student);
         }
-
-        System.out.println("=============================================================");
     }
 
     public static void add() {
-        MainMenu.printHeader("Add Student");
-
         Student newStudent = StudentMenu.readStudentInfo();
         AppConfig.university.addStudent(newStudent);
-
-        System.out.println("=============================================================");
     }
 
     public static Student find() {
@@ -42,8 +34,6 @@ public class StudentLogic {
     }
 
     public static void update() {
-        MainMenu.printHeader("Update Student");
-
         Student student = find();
 
         if (student != null) {
@@ -51,13 +41,9 @@ public class StudentLogic {
             System.out.println();
             student = StudentMenu.readStudentInfo();
         }
-
-        System.out.println("=============================================================");
     }
 
     public static void delete() {
-        MainMenu.printHeader("Delete Student");
-
         Student student = find();
 
         if (student != null) {
@@ -71,8 +57,6 @@ public class StudentLogic {
                 System.out.println("Operation canceled!");
             }
         }
-
-        System.out.println("=============================================================");
     }
 
 }

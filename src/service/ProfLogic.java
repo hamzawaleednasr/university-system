@@ -8,22 +8,14 @@ import models.Prof;
 
 public class ProfLogic {
     public static void show() {
-        MainMenu.printHeader("Proffessors");
-
         for (Prof prof : AppConfig.university.getProfs()) {
             ProfMenu.printProfRecord(prof);
         }
-
-        System.out.println("=============================================================");
     }
 
     public static void add() {
-        MainMenu.printHeader("Add Proffessor");
-
         Prof newProf = ProfMenu.readProfInfo();
         AppConfig.university.addProf(newProf);
-
-        System.out.println("=============================================================");
     }
 
     public static Prof find() {
@@ -52,7 +44,7 @@ public class ProfLogic {
             prof = ProfMenu.readProfInfo();
         }
 
-        System.out.println("=============================================================");
+        System.out.println("==============================================");
     }
 
     public static void delete() {
@@ -72,7 +64,7 @@ public class ProfLogic {
             }
         }
 
-        System.out.println("=============================================================");
+        System.out.println("==============================================");
     }
 
 }
