@@ -1,7 +1,9 @@
 package controllers;
 
 import ui.MainMenu;
+import ui.ProfMenu;
 import service.FacultyLogic;
+import service.ProfLogic;
 import service.StudentLogic;
 import ui.FacultyMenu;
 import ui.StudentMenu;
@@ -13,7 +15,7 @@ public class Controller {
                 FacultyMenu.printFacultyMenu();
                 break;
             case 2:
-                MainMenu.printProfMenu();
+                ProfMenu.printProfMenu();
                 break;
             case 3:
                 StudentMenu.printStudentMenu();
@@ -49,14 +51,16 @@ public class Controller {
     public static void performProfInput(int choice) {
         switch (choice) {
             case 1:
+                ProfLogic.show();
                 break;
             case 2:
+                ProfLogic.add();
                 break;
             case 3:
+                ProfLogic.update();
                 break;
             case 4:
-                break;
-            case 5:
+                ProfLogic.delete();
                 break;
             case 0:
                 MainMenu.printMainMenu();

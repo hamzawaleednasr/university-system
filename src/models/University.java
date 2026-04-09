@@ -1,12 +1,12 @@
 package models;
 
 import java.util.ArrayList;
-import ui.MainMenu;
 
 public class University {
     private String name;
     private ArrayList<Faculty> faculties;
     private ArrayList<Student> students;
+    private ArrayList<Prof> profs;
 
     public University() {}
 
@@ -14,6 +14,7 @@ public class University {
         this.name = name;
         this.faculties = new ArrayList<Faculty>();
         this.students = new ArrayList<Student>();
+        this.profs = new ArrayList<Prof>();
     }
 
     public String getName() {
@@ -33,5 +34,11 @@ public class University {
     }
     public void addStudent(Student student) {
         students.add(student);
+    }
+    public ArrayList<Prof> getProfs() {
+        return profs;
+    }
+    public void addProf(Prof prof) {
+        profs.add(prof);
     }
 }

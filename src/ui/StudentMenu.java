@@ -25,7 +25,7 @@ public class StudentMenu {
     public static Student readStudentInfo() {
         Student student = new Student(
             Terminal.readInt("Enter Student ID: "),
-            Terminal.readString("Enter Faculty name: "),
+            Terminal.readString("Enter Student name: "),
             Terminal.readInt("Enter Student age: ")
         );
 
