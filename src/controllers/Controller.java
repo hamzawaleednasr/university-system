@@ -8,6 +8,7 @@ import ui.SubjectMenu;
 import service.FacultyLogic;
 import service.ProfLogic;
 import service.StudentLogic;
+import service.SubjectLogic;
 
 public class Controller {
     public static void performMainInput(int choice) {
@@ -92,14 +93,16 @@ public class Controller {
     public static void performSubjectInput(int choice) {
         switch (choice) {
             case 1:
+                SubjectLogic.show();
                 break;
             case 2:
+                SubjectLogic.add();
                 break;
             case 3:
+                SubjectLogic.update();
                 break;
             case 4:
-                break;
-            case 5:
+                SubjectLogic.delete();
                 break;
             case 0:
                 MainMenu.printMainMenu();
