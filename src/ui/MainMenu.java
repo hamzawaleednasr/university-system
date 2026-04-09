@@ -23,18 +23,4 @@ public class MainMenu {
         System.out.println("=============================================");
         Controller.performMainInput(Terminal.readIntInRange(0, 4));
     }
-    
-    public static void printSubjectMenu() {
-        Terminal.clear();
-        printHeader("Subject Menu");
-        System.out.println("\t[1] Show Subjects");
-        System.out.println("\t[2] Add Subject");
-        System.out.println("\t[3] Update Subject");
-        System.out.println("\t[4] Delete Subject");
-        System.out.println("\t[5] Register a Subject");
-        System.out.println("==============================================");
-        System.out.println("\t[0] Return to main menu");
-        System.out.println("==============================================");
-        Controller.performSubjectInput(Terminal.readIntInRange(0, 5));
-    }
 }

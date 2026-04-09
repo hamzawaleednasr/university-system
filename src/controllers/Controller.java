@@ -2,11 +2,12 @@ package controllers;
 
 import ui.MainMenu;
 import ui.ProfMenu;
+import ui.FacultyMenu;
+import ui.StudentMenu;
+import ui.SubjectMenu;
 import service.FacultyLogic;
 import service.ProfLogic;
 import service.StudentLogic;
-import ui.FacultyMenu;
-import ui.StudentMenu;
 
 public class Controller {
     public static void performMainInput(int choice) {
@@ -21,7 +22,7 @@ public class Controller {
                 StudentMenu.printStudentMenu();
                 break;
             case 4:
-                MainMenu.printSubjectMenu();
+                SubjectMenu.printSubjectMenu();
                 break;
             case 0:
                 return;
