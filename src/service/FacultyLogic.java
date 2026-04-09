@@ -38,7 +38,11 @@ public class FacultyLogic {
         if (faculty != null) {
             FacultyMenu.printFacultyCard(faculty);
             System.out.println();
-            faculty = FacultyMenu.readFacultyInfo();
+            for (int i = 0; i < AppConfig.university.getFaculties().size(); i++) {
+                if (AppConfig.university.getFaculties().get(i).getId() == faculty.getId()) {
+                    AppConfig.university.getFaculties().set(i, FacultyMenu.readFacultyInfo());
+                }
+            }
         }
     }
 

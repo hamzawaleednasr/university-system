@@ -45,7 +45,13 @@ public class SubjectLogic {
         if (subject != null) {
             SubjectMenu.printSubjectCard(subject);
             System.out.println();
-            subject = SubjectMenu.readSubjectInfo();
+            for (int i = 0; i < AppConfig.university.getFaculties().size(); i++) {
+                for (int j = 0; j < AppConfig.university.getFaculties().get(i).getSubjects().size(); j++) {
+                    if (AppConfig.university.getFaculties().get(i).getSubjects().get(j).getCode() == subject.getCode()) {
+                        AppConfig.university.getFaculties().get(i).getSubjects().set(j, SubjectMenu.readSubjectInfo());
+                    }
+                }
+            }
         }
     }
 

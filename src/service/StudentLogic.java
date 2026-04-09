@@ -38,7 +38,11 @@ public class StudentLogic {
         if (student != null) {
             StudentMenu.printStudentCard(student);
             System.out.println();
-            student = StudentMenu.readStudentInfo();
+            for (int i = 0; i < AppConfig.university.getStudents().size(); i++) {
+                if (AppConfig.university.getStudents().get(i).getId() == student.getId()) {
+                    AppConfig.university.getStudents().set(i, StudentMenu.readStudentInfo());
+                }
+            }
         }
     }
 

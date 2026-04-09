@@ -41,7 +41,11 @@ public class ProfLogic {
         if (prof != null) {
             ProfMenu.printProfCard(prof);
             System.out.println();
-            prof = ProfMenu.readProfInfo();
+            for (int i = 0; i < AppConfig.university.getProfs().size(); i++) {
+                if (AppConfig.university.getProfs().get(i).getId() == prof.getId()) {
+                    AppConfig.university.getProfs().set(i, ProfMenu.readProfInfo());
+                }
+            }
         }
 
         System.out.println("==============================================");
