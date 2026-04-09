@@ -3,7 +3,6 @@ package service;
 import core.AppConfig;
 import models.Faculty;
 import models.Subject;
-import ui.MainMenu;
 import ui.SubjectMenu;
 import util.Terminal;
 

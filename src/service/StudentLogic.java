@@ -1,6 +1,5 @@
 package service;
 
-import ui.MainMenu;
 import ui.StudentMenu;
 import core.AppConfig;
 import util.Terminal;
